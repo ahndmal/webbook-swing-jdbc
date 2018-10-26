@@ -18,16 +18,16 @@ public class Student implements Comparable {
     private int groupId;
     private int educationYear;
 
-    public Student(ResultSet rs) throws SQLException {
-        
-        setStudentId(rs.getInt(1));
-        setFirstName(rs.getString(2));
-        setPatronymic(rs.getString(3));
-        setSurName(rs.getString(4));
-        setSex(rs.getString(5).charAt(0));
-        setDateOfBirth(rs.getDate(6));
-        setGroupId(rs.getInt(7));
-        setEducationYear(rs.getInt(8));
+    public Student(ResultSet resultSet) throws SQLException {
+
+        setStudentId(resultSet.getInt(1));
+        setFirstName(resultSet.getString(2));
+        setPatronymic(resultSet.getString(3));
+        setSurName(resultSet.getString(4));
+        setSex(resultSet.getString(5).charAt(0));
+        setDateOfBirth(resultSet.getDate(6));
+        setGroupId(resultSet.getInt(7));
+        setEducationYear(resultSet.getInt(8));
     }
 
     public Date getDateOfBirth() {
