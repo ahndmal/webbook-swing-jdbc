@@ -1,4 +1,4 @@
-package com.beastiehut.javaru.web;
+package com.anma.javaru.web;
 
 import java.sql.Connection;
 import java.sql.Date;
